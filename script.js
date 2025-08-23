@@ -8,7 +8,7 @@
 
 let images = [
     
-     "./img/barn.jpg",
+     "./img/barn.jpg", 
     
     
      "./img/bell.jpg",
@@ -55,7 +55,39 @@ let images = [
     
     
 
-];
+]; 
+let alts = [
+   
+    "Barn",
+   
+    "Bell",
+   
+    "Boat",
+   
+    "Duck",
+   
+    "Forest",
+   
+    "Gana", 
+   
+    "Grassland",
+   
+    "Lake",
+   
+    "Mala",
+   
+    "Prayer-Wheels",
+   
+    "River",
+   
+    "Theravada",
+   
+    "Tree",
+   
+    "Wheat",
+   
+    "Yak",
+]
 
 let currentIndex = 0;
 
@@ -64,7 +96,12 @@ function render() {
     gallery.innerHTML=""; 
 
     for (let i = 0; i < images.length; i++) {
-        gallery.innerHTML += `<img src="${images[i]}"class="image_photo" onclick="zoomImg(${i})">`;
+        gallery.innerHTML += 
+        `<img 
+        src="${images[i]}"
+        alt="${alts[i]}"
+        class="image_photo"
+        onclick="zoomImg(${i})">`;
         
     }
     
@@ -99,6 +136,21 @@ function toggleOverlay() {
     overlayRef.classList.toggle('d_none');
     
 }  
+
+
+document.addEventListener('keydown', function(e) {
+    if (e.key ==='ArrowLeft') pressImg(-1);
+
+    if (e.key === 'ArrowRight') pressImg(1);
+}
+)
+const closeBtn = document.getElementById('closeBtn');
+closeBtn.addEventListener('keydown', function(e){
+    if (e.key === 'Enter' || e.key === '') {
+        this.click(); // toggleOverlay ()
+        e.preventDefault(); // nicht scrollen
+    }
+})
 
 
 
