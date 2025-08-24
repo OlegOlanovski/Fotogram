@@ -1,94 +1,93 @@
-
-html, body {
-    margin: 0;
-    height: 100%; 
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
 header {
   display: flex;
   align-items: center;
   max-width: 100%;
   height: 138px;
-  background-color: #06242F;
-} 
-.img_logo {
-   max-width: 250px;
-   height: 70px;
-   padding-left: 24px;
+  background-color: #06242f;
 }
-.content { 
+.img_logo {
+  max-width: 250px;
+  height: 70px;
+  padding-left: 24px;
+}
+.content {
   display: flex;
   align-items: center;
   width: 100%;
   min-height: 100%;
   background-color: #041821;
   flex-direction: column;
-} 
+}
 h1 {
   color: white;
   text-align: center;
   font-size: 42px;
   padding-top: 64px;
-  } 
-  .img_section {
-    max-width: 1440px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    padding: 5px;
-    transition: all 0.3s ease;
-  } 
-  .image_photo {
-    height: 120px;
-    width: 160px;
-    border-radius: 4px;
-    cursor: pointer;
-  } 
-  .image_photo:hover {
-    box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
-    transform: scale(1.05);
-  }
-  footer { 
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    height: 138px;
-    background-color: #06242F;
-  } 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.738);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  .d_none {
-    display: none;
-  } 
-  .backgroundzoom { 
-    max-width: 90%;
-    max-height: 90%;
-    margin: 0 auto;
-    position: relative;
-    background-color: #06242F;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-.img_zoomed { 
+}
+.img_section {
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+.image_photo {
+  height: 120px;
+  width: 160px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.image_photo:hover {
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+  transform: scale(1.05);
+}
+footer {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: 138px;
+  background-color: #06242f;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.738);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d_none {
+  display: none;
+}
+.backgroundzoom {
+  max-width: 90%;
+  max-height: 90%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #06242f;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img_zoomed {
   max-width: 90%;
   max-height: 80vh;
   border-radius: 10px;
   width: 1150px;
   height: 650px;
-} 
-.close{
+}
+.close {
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -98,9 +97,8 @@ h1 {
   user-select: none;
   padding: 10px;
 }
-.close:hover { 
-  
-  transform: scale(1.30);
+.close:hover {
+  transform: scale(1.3);
 }
 .prev {
   position: relative;
@@ -110,17 +108,17 @@ h1 {
   user-select: none;
 }
 .prev:hover {
-  transform:scale(1.30);
-} 
+  transform: scale(1.3);
+}
 .next {
   position: relative;
   color: white;
   font-size: 40px;
   cursor: pointer;
   user-select: none;
-} 
-.next:hover{
-  transform:scale(1.30);
+}
+.next:hover {
+  transform: scale(1.3);
 }
 .headercontainer {
   max-width: 1920px;
@@ -130,7 +128,7 @@ h1 {
 .header-inner {
   display: flex;
   justify-content: flex-start;
-  align-items: center; 
+  align-items: center;
 }
 .controls {
   position: relative;
@@ -149,14 +147,11 @@ h1 {
     width: 95vw;
     height: 40vh;
   }
-} 
+}
 
 @media (max-width: 580px) {
   .backgroundzoom {
     width: 85vw;
     height: 27vh;
   }
-
-} 
-
-
+}
