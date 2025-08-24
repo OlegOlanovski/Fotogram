@@ -6,37 +6,30 @@
     <title>Fotogram</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./favicon/favicon.png" type="image/png">
-    
 </head>
 <body onload="render()" >
     <header>
-        
-       <img class="img_logo" src="./favicon/Fotogram_Logo.svg" alt="logo"> 
-    
-        
+        <div class="headercontainer">    
+       <img class="img_logo" src="./favicon/Fotogram_Logo.svg" alt="logo">    
+        </div>
     </header>
     <section class="content"> 
         <h1>World in Focus</h1>
-
             <div  id="gallery" class="img_section">
-           
-
         </div>
         <div onclick="toggleOverlay()" id="overlay" class="overlay d_none">
             <div onclick="bubblingprotection(event)"  class="backgroundzoom">
+                <div class="close_section">
                 <span id="closeBtn" onclick="toggleOverlay()" role="button" tabindex="0" aria-label="close" class="close">&times;</span>
-                <span onclick="pressImg(-1)"role="button" tabindex="0" aria-label="prev img" class="prev"> &#10094;</span>
-                
-                <img class="showimg" id="zoomedImg" src="" alt="zoomed">
-                
-                <span onclick="pressImg(1)" role="button" tabindex="0" aria-label="next img" class="next"> &#10095;</span>
                 </div>
-
+                <img class="img_zoomed" id="zoomedImg" src="" alt="zoomed">
+                <div class="controls">    
+                    <span onclick="pressImg(-1)"role="button" tabindex="0" aria-label="prev img" class="prev"> &#10094;</span> 
+                    <span onclick="pressImg(1)" role="button" tabindex="0" aria-label="next img" class="next"> &#10095;</span>
+                </div>
             </div>
-
+          
         </div>
-
-
     </section>
     <footer> </footer>
     <script src="script.js"></script>
