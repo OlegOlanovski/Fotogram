@@ -147,6 +147,23 @@ h1 {
 @media (max-width: 780px) {
   .backgroundzoom {
     width: 95vw;
-    height: 50vh;
+    height: 40vh;
   }
 } 
+
+@media (max-width: 580px) {
+  .backgroundzoom {
+    width: 85vw;
+    height: 27vh;
+  }
+  .close {
+    font-size: 20px;
+  }
+} 
+.prev {
+  font-size: 20px;
+} 
+.next {
+  font-size: 20px;
+} 
+
